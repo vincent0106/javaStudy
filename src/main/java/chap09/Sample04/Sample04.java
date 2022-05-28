@@ -4,7 +4,7 @@ public class Sample04 {
 
 	/*
 	* 다형성 : 자식은 부모 매서드를 사용 할 수 있지만 부모는 자식 메서드를 사용 할 수 없다.
-	* 업 캐스팅( 자식 -> 부모 ) , 다운 캐스팅 ( 부모 -> 자식 )
+	* 업 캐스팅( 자식 -> 부모 ), 다운 캐스팅 ( 부모 -> 자식 )
 	*/
 	public static void main(String[] args) {
 		Pet cat = new Cat(false, 4);
