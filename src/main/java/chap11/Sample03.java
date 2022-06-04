@@ -24,10 +24,19 @@ public class Sample03 {
 
         //3번째 위치에 '이 쩜 오'를 삭제
         System.out.println("* 3번째 위치에 '이 쩜 오'를 삭제");
+        System.out.println("* 향상된 for ********************");
         arr.remove(2);
         for (String a : arr) {
             System.out.println(a);
         }
+
+        System.out.println("* for ************************");
+
+        for (int i = 0; i < arr.size(); i++) {
+            System.out.printf("%d번 - %s%n", (i+1), arr.get(i));
+        }
+
+        System.out.println("*******************************");
 
         //둘, 셋 삭제
         System.out.println("\n* 둘, 셋 삭제");

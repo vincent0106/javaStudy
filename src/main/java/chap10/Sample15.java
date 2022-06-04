@@ -36,6 +36,9 @@ public class Sample15 {
         }
     }
 
+    /*
+    * 하위 클래스 제한
+    * */
     public static void getPetList(Group<? extends Animal> group){
         Object[] g = group.getGroup();
         for (int i = 0; i < g.length; i++){
@@ -59,10 +62,10 @@ class Group<G> {
     }
 }
 
-@Getter
 @AllArgsConstructor
+@Getter
 class Animal{
-    private String name;
+   private String name;
 }
 
 class Pet extends Animal{

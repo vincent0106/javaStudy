@@ -1,6 +1,7 @@
 package chap11;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 public class Sample05 {
@@ -10,7 +11,7 @@ public class Sample05 {
     * */
 
     static List<String> list1 = new ArrayList<>();
-    static List<String> list2 = new ArrayList<>();
+    static List<String> list2 = new LinkedList<>();
 
     public static void main(String[] arrgs){
 
@@ -37,7 +38,7 @@ public class Sample05 {
 
     public static void toString(String title){
         System.out.printf("%n== %s ==%n", title);
-        System.out.printf("ArrayList : " + list1);
-        System.out.printf(" LinkedList : " + list2);
+        System.out.println("ArrayList : " + list1);
+        System.out.println("LinkedList : " + list2);
     }
 }
