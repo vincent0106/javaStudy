@@ -23,6 +23,11 @@ public class Sample06 {
         stack.push("lion");
         System.out.printf("총 %d의 자료가 있습니다.%n%n", stack.size());
 
+        System.out.println("*******************************");
+
+        System.out.println(stack.peek());
+
+        System.out.println("*******************************");
         //2. pop
         while(!stack.isEmpty()){
             System.out.println(stack.pop());

@@ -39,5 +39,8 @@ class Employee implements Comparable<Employee>{
         // ** sabun을 기준으로 정렬
         //return this.sabun - e.sabun;    //순정렬
         return e.sabun - this.sabun;    //역정렬
+
+        // 음수 또는 0이면 객체의 자리가 그대로 유지되며, 양수인 경우에는 두 객체의 자리가 바뀐다.
+        //return 1;
     }
 }
