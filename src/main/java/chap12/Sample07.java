@@ -1,5 +1,8 @@
 package chap12;
 
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+
 import java.util.Scanner;
 
 public class Sample07 {
@@ -41,11 +44,15 @@ public class Sample07 {
     }
 }
 
+
+@AllArgsConstructor
+@Getter
 enum CITY {
 
 //    SEOUL("서울"), DAEJEON("대전"), DAEGU("대구"), PUSAN("부산"), GWANGJU("광주");
 
-    SEOUL(0,"서울"), DAEJEON(1,"대전"), DAEGU(2,"대구"),
+    SEOUL(0,"서울"), DAEJEON(1,"대전"),
+    DAEGU(2,"대구"),
     PUSAN(3,"부산"), GWANGJU(4,"광주");
 
     private final int order;    // 순번
@@ -54,19 +61,6 @@ enum CITY {
 /*    private CITY(String destination) {
         this.destination = destination;
     }*/
-
-    private CITY(int order, String destination) {
-        this.order = order;
-        this.destination = destination;
-    }
-
-    public String getDestination() {
-        return destination;
-    }
-
-    public int getOrder() {
-        return order;
-    }
 
     public static CITY valueOf(int selectNum) {
         CITY returnCity = null;
