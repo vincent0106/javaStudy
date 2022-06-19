@@ -22,14 +22,28 @@ public class Sample13 {
         var map = new TreeMap<String, String>();
         map.putAll(hashmap);
 
+        /*
+        *                                     1902893(선풍기)
+        *
+        *
+        *                     1801438(신문지)              1913449(동백꽃)
+        *
+        *
+        *            1722761(강속구)   1803962(고무신)
+        *
+        *
+        *                                     1804367(솔까말)
+        * */
+
+
         System.out.println(map);
 
         System.out.println();
 
         //학번이  1803959 이거나 더 큰 값을 갖는 가장 가까운 학번 정보
         System.out.println("학번이 1803959 이거나 더 큰 값을 갖는 가장 가까운 학번 정보");
-        System.out.println(map.ceilingEntry("1803959"));    //entry 형태로  변환
-        System.out.print(map.ceilingKey("1803959"));    //key 반환
+        System.out.println(map.ceilingEntry("1803959"));   //entry 형태로  변환
+        System.out.print(map.ceilingKey("1803959"));            //key 반환
         //key로 value 찾기
         System.out.println(" , " + map.get(map.ceilingKey("1803959")));
 
