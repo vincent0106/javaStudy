@@ -1,4 +1,4 @@
-package chap13;
+package chap12.chap13;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -14,7 +14,7 @@ public class Sample11 {
         Date today = new Date();
         System.out.printf("오늘은 %s입니다.\n", today);
 
-        SimpleDateFormat format1 = new SimpleDateFormat("YYYY년 MM월 dd일 EHH시 mm분 ss초");
+        SimpleDateFormat format1 = new SimpleDateFormat("YYYY년 MM월 dd일 E HH시 mm분 ss초");
         SimpleDateFormat format2 = new SimpleDateFormat("YYYY년 MM월 dd일 EEEEE a hh시 mm분 ss초");
         SimpleDateFormat format3 = new SimpleDateFormat("EEEEE dd MMMMM yyyy HH:mm:ss", new Locale("en", "US"));
         SimpleDateFormat format4 = new SimpleDateFormat("E dd MMMMM yyyy HH:mm:ss", Locale.ENGLISH);

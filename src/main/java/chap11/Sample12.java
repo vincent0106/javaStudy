@@ -11,7 +11,8 @@ public class Sample12 {
     * 그러므로 PUT 한 뒤에 toString 으로 출력시 순서대로 들어 있지 않다.
     * */
     public static void main(String[] args){
-        var map = new HashMap<String, Integer>();   // 키: 언어, 값: 순위
+        Map<String, Integer> map = new HashMap<>();   // 키: 언어, 값: 순위
+        //var map = new HashMap<String, Integer>();   // 키: 언어, 값: 순위
         map.put("Java", 1);
         map.put("C", 2);
         map.put("C++", 3);
@@ -23,7 +24,7 @@ public class Sample12 {
         map.put("Per1", 9);
         map.put("Delphi", 10);
 
-        Map beforeMap = (Map) map.clone();  // clone : 복사
+        Map<String, Integer> beforeMap = (Map<String, Integer>) ((HashMap<String, Integer>) map).clone();  // clone : 복사
         Set<String> keys = map.keySet();
 
         //향상된 for 문
@@ -38,7 +39,7 @@ public class Sample12 {
         System.out.println("==Lambda expression[16장]");
         keys.forEach((s) -> System.out.println(s));
 
-
+        System.out.println("");
         //메서드 참조
         System.out.println("==Method references[16징]");
         map.keySet().forEach(System.out::println);

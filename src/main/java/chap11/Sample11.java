@@ -30,6 +30,8 @@ public class Sample11 {
         * * */
         // 자
         // Tree 속성으로 순차적으로 추가됨 가나다 순 . 사자 -> 원숭이 -> 호랑이
+
+        System.out.println("@@@ ArrayList :: " + arr);
         System.out.println("1 > ArrayList를 TreeSet으로 가져옵니다.[addAll()]");
         var trs = new TreeSet<String>();
         trs.addAll(arr);
