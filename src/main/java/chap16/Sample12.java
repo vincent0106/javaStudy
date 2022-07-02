@@ -3,7 +3,7 @@ package chap16;
 import java.text.DecimalFormat;
 import java.util.function.Function;
 
-public class Smaple12 {
+public class Sample12 {
     public static void main(String[] args){
         int myMoney = 100000;
 
