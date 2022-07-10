@@ -15,14 +15,17 @@ public class Sample22 {
         // 매서드 참조
         list.forEach(Writer::doWrite);
 
+        System.out.println("#####");
         // 람다식
         list.forEach((s) -> Writer.doWrite(s));
 
+        System.out.println("#####");
         // 향상된 for
         for (Integer i : list) {
             Writer.doWrite(i);
         }
 
+        System.out.println("#####");
         // for
         for (int i = 0; i < list.size(); i++) {
             Writer.doWrite(list.get(i));
