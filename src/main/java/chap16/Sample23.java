@@ -5,7 +5,7 @@ import java.util.function.Function;
 public class Sample23 {
 
     public static void main(String[] args){
-        Function<String, String> helloLambda = (name) -> HelloTo.hello(name);
+        Function<String, String> helloLambda = (name) -> HelloTo1.hello(name);
 
         // hello 라는 인스턴스 메소드를 참조.
         Function<String, String> helloStatic = HelloTo::hello;
@@ -15,7 +15,7 @@ public class Sample23 {
     }
 }
 
-class HelloTo{
+class HelloTo1{
     public static String hello(String name){
         return "Hello~ " + name;
     }
